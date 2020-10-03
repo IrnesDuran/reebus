@@ -1,0 +1,67 @@
+@import '../../constants/variables';
+
+.header {
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .reebus-logo {
+    background-image: url('../../assets/images/reebus-logo.png');
+    background-size: cover;
+    background-position: center;
+    margin: 16px;
+    margin-left: 32px;
+    margin-right: auto;
+    height: 30px;
+    width: 103px;
+  }
+  .avatar-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    color: $blue-main;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 20;
+
+    .avatar {
+      // background-image: url('../../assets/images/avatar.jpg');
+      // background-size: cover;
+      // background-position: center;
+      background-color: #fff;
+      border: 1px solid $blue-disabled;
+      border-radius: 20px;
+      margin: 0 32px 0 16px;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      font-size: 28px;
+      color: $blue-main;
+    }
+
+    .magnifier {
+      height: 16px;
+      width: 16px;
+      margin-right: 32px;
+      color: $blue-disabled;
+      background-image: url('../../assets/images/magnifier.png');
+    }
+    .logout-modal {
+      position: absolute;
+      right: 32px;
+      top: 60px;
+      background-color: #fff;
+      padding: 3px;
+      border: 1px solid $blue-main;
+      cursor: pointer;
+    }
+  }
+
+  .abort-project {
+    margin-left: auto;
+    margin-right: 32px;
+    cursor: pointer;
+  }
+}

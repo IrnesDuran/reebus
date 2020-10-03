@@ -1,0 +1,13 @@
+@import '../../constants/variables';
+
+.overview-content {
+  margin-top: 100px;
+  text-align: left;
+}
+
+.create-project-link {
+  font-weight: 800;
+  text-decoration: underline;
+  color: $blue-main;
+  cursor: pointer;
+}

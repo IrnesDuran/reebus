@@ -1,0 +1,115 @@
+@import '../../constants/variables';
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(black, 0.4);
+  z-index: 200;
+  opacity: 1;
+  transition: all 0.3s;
+
+  @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(#9b9b9b, 0.23);
+  }
+
+  &.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s 0.2s;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    min-width: 490px;
+    height: 72%;
+    background-color: #fff;
+    box-shadow: 0 15px 30px rgba(black, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: all 0.5s 0.2s;
+
+    &.inactive {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      transition: all 0.3s;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+
+    width: 338px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    justify-self: flex-end;
+  }
+}
+
+.modal-children {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+// .modal {
+//   height: 100vh;
+//   width: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: rgba(black, 0.4);
+//   z-index: 200;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: all 0.3s;
+
+//   @supports (-webkit-backdrop-filter: blur(10px)) or
+//     (backdrop-filter: blur(10px)) {
+//     -webkit-backdrop-filter: blur(10px);
+//     backdrop-filter: blur(10px);
+//     background-color: rgba(grey, 0.4);
+//   }
+
+//   &:target {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+
+//   &:target &-content {
+//     opacity: 1;
+//     transform: translate(-50%, -50%) scale(1);
+//   }
+
+//   &-close {
+//     &:link,
+//     &:visited {
+//       color: $blue-dark;
+//       font-size: 30px;
+//       position: absolute;
+//       text-decoration: none;
+//       display: inline-block;
+//       transition: all 0.2s;
+//       left: 50%;
+//       top: 200px;
+//       z-index: 250;
+//     }
+
+//     &:hover {
+//       color: red;
+//     }
+//   }
+// }

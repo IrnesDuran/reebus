@@ -1,0 +1,9 @@
+@import '../../constants/variables';
+
+.unit {
+  display: flex;
+  //height: 50px;
+  //width: 50px;
+  border: 1px solid $blue-main;
+  //margin: -1px 0 0 -1px; //to easily avoid 2 border lines of 2 adjacent units
+}

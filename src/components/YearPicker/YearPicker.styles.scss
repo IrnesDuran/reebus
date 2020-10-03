@@ -1,0 +1,51 @@
+@import '../../constants/variables';
+
+.date-picker-container {
+  padding: 10px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  position: relative;
+
+  .date-picker-label {
+    width: 250px;
+    color: $blue-main;
+    display: block;
+    margin: 7px 0;
+    font-size: 15px;
+    text-align: left;
+  }
+  .year-picker {
+    cursor: default;
+    outline: none;
+    border: 1px solid $blue-disabled;
+    padding: 6px 10px;
+    width: 145px;
+    height: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    margin: 0px 40px;
+    color: $blue-disabled;
+  }
+
+  .year-picker:focus {
+    outline: none;
+    border: 1px solid $blue-main;
+    color: $blue-dark;
+  }
+
+  .calendar-icon {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-left: 1px solid $blue-disabled;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+}

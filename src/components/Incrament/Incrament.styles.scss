@@ -1,0 +1,56 @@
+@import '../../constants/variables';
+.incrament-container {
+  margin: 14px 0;
+  display: flex;
+  align-items: center;
+
+  .incrament {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .incrament-icon {
+      cursor: pointer;
+      //font-family: 'Open Sans';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      color: #fff;
+      background-color: $blue-disabled;
+      font-size: 22px;
+    }
+
+    .incrament-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 30px;
+      color: $blue-disabled;
+      background-color: #fff;
+      border: 1px solid $blue-disabled;
+      box-sizing: border-box;
+    }
+
+    &:hover {
+      .incrament-icon {
+        background-color: $blue-main;
+      }
+      .incrament-content {
+        border: 1px solid $blue-main;
+        color: $blue-main;
+      }
+    }
+
+    &:active {
+      transform: scale(1.02);
+    }
+  }
+
+  .Label {
+    width: 190px;
+  }
+}

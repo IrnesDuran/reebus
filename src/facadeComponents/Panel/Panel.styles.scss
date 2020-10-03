@@ -1,0 +1,27 @@
+@import '../../constants/variables';
+
+.panel {
+  //display: block;
+  height: 60px;
+  min-width: 50px;
+  //border: 1px solid $blue-disabled;
+  position: relative;
+  margin: -1px 0 0 -1px; //to easily avoid 2 border lines of 2 adjacent elements
+
+  &-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .panel-cassette {
+    height: 100%;
+    float: left;
+  }
+}
+
+.panel-cassette-mirrored {
+  height: 100%;
+  float: left;
+  transform: scaleX(-1);
+}

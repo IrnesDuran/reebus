@@ -1,0 +1,58 @@
+@import '../../constants/variables';
+
+.Input {
+  padding: 10px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+}
+
+.Label {
+  color: $blue-main;
+  display: block;
+  margin: 7px 0;
+  font-size: 15px;
+  text-align: left;
+  width: 250px;
+
+  &.inactive {
+    color: $blue-disabled;
+  }
+}
+
+.InputElement {
+  outline: none;
+  background-color: #fff;
+  border: 1px solid $blue-disabled;
+  padding: 6px 10px;
+  //display: block;
+  width: 230px;
+  height: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  margin: 0 40px;
+  color: $blue-disabled;
+  // Hide select arrow
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+
+  &.select {
+    font-family: 'Roboto';
+    width: 145px;
+    margin-top: 15px;
+    font-size: 15px;
+    align-items: center;
+    padding-top: 4px;
+  }
+}
+
+.InputElement::-webkit-calendar-picker-indicator {
+  opacity: 0; //hides calendar picker default icon
+}
+
+.InputElement:focus {
+  outline: none;
+  border: 1px solid $blue-main;
+  color: $blue-dark;
+}

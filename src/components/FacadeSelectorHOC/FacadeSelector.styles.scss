@@ -1,0 +1,50 @@
+@import '../../constants//variables';
+.facade-selector {
+  height: 100%;
+  margin-top: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  direction: rtl;
+  width: 500px;
+  position: relative;
+  left: -28px;
+  //background-color: white;
+
+  .scroll-ltr {
+    direction: ltr;
+  }
+}
+
+::-webkit-scrollbar {
+  transform: translateX(20px);
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  width: 7px;
+  border: none;
+  background: transparent;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: $blue-disabled;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $blue-main;
+}
+
+::-webkit-scrollbar-track {
+  background: $blue-disabled;
+  border-left: 3px solid $bg-color;
+  border-right: 3px solid $bg-color;
+}

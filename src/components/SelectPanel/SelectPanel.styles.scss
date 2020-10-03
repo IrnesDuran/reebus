@@ -1,0 +1,15 @@
+@import '../../constants/_variables';
+
+.select-panel {
+  margin-bottom: 100px;
+
+  .panel-select-fields {
+    cursor: pointer;
+    width: fit-content;
+    margin: 30px 0;
+    color: $blue-main;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+  }
+}

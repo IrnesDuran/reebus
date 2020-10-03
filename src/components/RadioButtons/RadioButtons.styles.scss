@@ -1,0 +1,50 @@
+@import '../../constants/variables';
+
+.radio-container {
+  display: flex;
+  padding: 10px 0;
+  color: $blue-main;
+  font-size: 15px;
+  align-items: center;
+
+  .radio-group {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .radio-button {
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 1px solid $blue-disabled;
+    margin-right: 10px;
+    transition: all 0.2s;
+
+    &.active {
+      background-color: $blue-main;
+    }
+  }
+
+  .radio-label {
+    color: $blue-disabled;
+    transition: all 0.2s;
+
+    &.active {
+      color: $blue-main;
+    }
+  }
+
+  .stairs-group {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .stairs-button {
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.2s;
+  }
+}

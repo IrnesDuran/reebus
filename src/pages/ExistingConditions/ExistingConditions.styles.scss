@@ -1,0 +1,34 @@
+@import '../../constants/variables';
+.captions {
+  text-align: left;
+  width: 360px;
+
+  .heading-4 {
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+}
+
+.dropdown-icon-container {
+  pointer-events: none;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid $blue-disabled;
+  position: absolute;
+  margin-left: 155px;
+  margin-top: 15px;
+
+  .dropdown-icon {
+    left: 0;
+  }
+}
+
+.pages-data-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
